@@ -1,4 +1,4 @@
-import { SendMessageProps, TelegramBotApiInit } from './interface';
+import { SendMessageProps, TelegramBotApiInit, TelegramCommonProps } from './interface';
 import axios, { AxiosInstance } from 'axios';
 
 export class TelegramBotApi {
@@ -15,10 +15,14 @@ export class TelegramBotApi {
         });
     }
 
-    sendMessage = ({ text }: SendMessageProps) => {
+    private getCommonProps = (props: TelegramCommonProps) => {
+        return { ...this.commonProps, ...props };
+    };
+
+    sendMessage = ({ text, chatId }: SendMessageProps) => {
         return this.http.post('/sendMessage', {
             text,
-            ...this.commonProps,
+            ...this.getCommonProps({ chatId }),
         });
     };
 }

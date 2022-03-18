@@ -1,8 +1,8 @@
 export interface TelegramCommonProps {
-    chatId: string;
+    chatId?: string;
 }
 
-export interface SendMessageProps {
+export interface SendMessageProps extends TelegramCommonProps {
     text: string;
 }
 

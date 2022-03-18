@@ -1,5 +1,5 @@
 {
-    "name": "react-telegram-bot-api",
+    "name": "client-telegram-bot-api",
     "version": "0.0.2",
     "description": "A telegram utils",
     "main": "lib/index.js",
@@ -43,9 +43,9 @@
     "directories": {
         "test": "test"
     },
-    "repository": "git+git@github.com:Heaty566/react-telegram-bot-api.git",
+    "repository": "git+git@github.com:Heaty566/client-telegram-bot-api.git",
     "bugs": {
-        "url": "https://github.com/Heaty566/react-telegram-bot-api/issues"
+        "url": "https://github.com/Heaty566/client-telegram-bot-api/issues"
     },
-    "homepage": "https://github.com/Heaty566/react-telegram-bot-api#readme"
+    "homepage": "https://github.com/Heaty566/client-telegram-bot-api#readme"
 }
